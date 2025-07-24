@@ -10,7 +10,7 @@ else
     echo "Woww Buddy , you have privileges , you are good to run this script. Make sure dont do anything funny on this server"
 fi
 
-sleep 5 &
+sleep 5 
 
 echo "Enter you Username::"
 
