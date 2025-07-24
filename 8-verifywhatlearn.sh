@@ -16,7 +16,7 @@ read -s USERNAME
 
 echo "Enters yourname is :: $USERNAME"
 
-eho "Enter your password for the $USERNAME"
+echo "Enter your password for the $USERNAME"
 
 read -s PASSWORD
 echo $?
