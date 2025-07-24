@@ -83,6 +83,7 @@ then
         exit 1
     else
         echo " Congratualations , Mysql installation is Successful , you are good proceed"
+    fi
 else
     echo "Great , mysql is installed and you dont need to do anything"
     exit 1
