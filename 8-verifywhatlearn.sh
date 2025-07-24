@@ -10,6 +10,8 @@ else
     echo "Woww Buddy , you have privileges , you are good to run this script. Make sure dont do anything funny on this server"
 fi
 
+sleep 5 &
+
 echo "Enter you Username::"
 
 read -s USERNAME
@@ -19,13 +21,13 @@ echo "Enters yourname is :: $USERNAME"
 echo "Enter your password for the $USERNAME"
 
 read -s PASSWORD
-echo $?
+#echo $?
 if [ $? -ne 0 ]
 then
     echo "You havent entererd $PASSWORD"
 
 else
-    echo "You did a great job entering your $PASSWORD , remember it well"
+    echo "You did a great job entering your Password for $USERNAME , remember it well"
 fi
 
 
