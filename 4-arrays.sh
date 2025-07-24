@@ -1,6 +1,6 @@
 #!/bin/bash
 
-Movies=("RRR" "Game Changer" "Devara")
+Movies=("RRR" "GameChanger" "Devara")
 
 echo "First movie is : ${Movies[0]}"
 echo "Second movie is : ${Movies[1]}"
