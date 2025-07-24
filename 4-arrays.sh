@@ -1,9 +1,11 @@
 #!/bin/bash
 
-Movies=("pushpa" "rrr" "raju")
+Movies=("RRR" "Game Changer" "Devara")
 
-echo "First movie : ${Movies[0]}"
-echo "Second movie : ${Movies[1]}"
-echo "Third movie : ${Movies[2]}"
+echo "First movie is : ${Movies[0]}"
+echo "Second movie is : ${Movies[1]}"
+echo "Third movies is : ${Movies[2]}"
 
-echo "All movies are : ${Movies[@]}"
+echo "Now lets see all movies are below"
+
+echo "All movies list is : ${Movies[@]}"
