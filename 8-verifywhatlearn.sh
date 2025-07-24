@@ -68,3 +68,23 @@ echo "Home Directory of Current running user $HOME"
 echo "Process id of Current Script $$"
 sleep 10 &
 echo "Process id last executed background process is $!"
+
+
+
+dnf list installed mysql
+
+if [ $? -ne 0 ]
+then
+    echo "ok , mysql not stalled , you need to install in , dont worry we are installing that in this script"
+    dnf install mysql -y
+    if [ $? -ne 0 ]
+    then
+        echo " There is something going on here , mysql installation is .. Failure"
+        exit 1
+    else
+        echo " Congratualations , Mysql installation is Successful , you are good proceed"
+else
+    echo "Great , mysql is installed and you dont need to do anything"
+    exit 1
+fi
+
