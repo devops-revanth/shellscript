@@ -1,6 +1,6 @@
 #!/bin/bash
 
-today = $(date +%A)
+today=$(date +%A)
 
 if [[ $today == 'Sunday' ]]
 then
