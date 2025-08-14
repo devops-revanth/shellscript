@@ -12,7 +12,7 @@ USERID=$(id -u)
 
 if [ $USERID -ne 0 ];
 then
-    echo -e "$R ERROR $N You need to run this script as sudo or root user"
+    echo -e "${R}ERROR $N You need to run this script as sudo or root user"
     exit 1
 else
     echo "You are goot to Proceed to run this script"
