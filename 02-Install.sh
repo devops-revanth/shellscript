@@ -6,12 +6,12 @@ Y="\e[33m"
 N="\e[0m"
 
 
-echo "User who is running this script is : $USER"
+echo -e "User who is running this script is : $G $USER $N"
 
 USERID=$(id -u)
 if [ $USERID -ne 0]
 then
-    echo "You need to run this script as sudo or root user"
+    echo -e "$R ERROR $N You need to run this script as sudo or root user"
     exit 1
 else
     echo "You are goot to Proceed to run this script"
