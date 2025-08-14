@@ -2,7 +2,7 @@
 
 today = $(date +%A)
 
-if [ $today -eq Sunday ]
+if [[ $today == 'Sunday' ]]
 then
     echo "$today is Holiday , no need to go to school"
 else
