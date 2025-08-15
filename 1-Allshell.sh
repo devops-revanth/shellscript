@@ -73,7 +73,7 @@ echo "Current Memory Usage is : $(free -h | grep Mem | awk '{print $3 "/" $2}')"
 echo "Current Disk Usage is : $(df -h | grep '^/dev/' | awk '{print $3 "/" $2}')"
 echo "Current Network Interfaces are : $(ip -o link show | awk -F': ' '{print $2}')"
 echo "Current IP Addresses are : $(hostname -I | awk '{print $1}')"
-sleep 3
+sleep 3 &
 echo "Process id for last command executed is : $!"
 
 #######################################################################################
