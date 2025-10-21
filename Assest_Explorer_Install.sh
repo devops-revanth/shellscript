@@ -1,7 +1,8 @@
 #!/bin/bash
 
-PASSWORD='Lucky2025#$IRV'
-USER='rgourabathuni'
+
+USER='youruser'
+PASSWORD=$(<pass.txt)
 
 while read -r host <&3; do
   [ -n "$host" ] || continue   # skip empty lines
@@ -106,4 +107,4 @@ echo "Completed processing for $host"
 echo "========================================="
 echo ""
 
-done < list
+done 3< list
