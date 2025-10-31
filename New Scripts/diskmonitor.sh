@@ -20,6 +20,8 @@ for S in "${SERVICES[@]}"; do
 done
 
 
+
+
 #!/bin/bash
 DIRS=("/var/log" "/tmp")
 THRESHOLD=80
